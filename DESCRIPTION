@@ -4,8 +4,18 @@ Version: 0.0.0.9000
 Authors@R: 
     person("Natalia", "da Silva", , "natalia.dasilva@fcea.edu.uy", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-6031-7451"))
-Description: SpICE: An interpretable machine learning approache using ICE curves for spatial data
+Description: SpICE: An interpretable machine learning approache using ICE curves for spatial data.
 License: GPL (>= 3)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.1
+Depends:R (>= 4.2.0)
+Imports:
+    rlang, 
+    ggplot2,
+    dplyr
+
+
+
+
+
