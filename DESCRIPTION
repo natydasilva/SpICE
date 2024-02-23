@@ -13,7 +13,8 @@ Depends:R (>= 4.2.0)
 Imports:
     rlang, 
     ggplot2,
-    dplyr
+    dplyr,
+    ggmap
 
 
 
