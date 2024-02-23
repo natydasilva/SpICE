@@ -3,8 +3,8 @@
 #' data.frame with 1000 rows and five columns
 #' \itemize{
 #' \item{grlab}{ Group id}
-#' \item{yhat}{ refractive index} 
-#' \item{grid.point}{ Grid id.} 
+#' \item{yhat.id}{ ice curve id} 
+#' \item{grid.point}{ Grid id} 
 #' \item{ice}{ Ice curve values}
 #' \item{gridval}{ Grid value}
 #' }

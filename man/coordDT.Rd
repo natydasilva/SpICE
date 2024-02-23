@@ -3,7 +3,7 @@
 \docType{data}
 \name{coordDT}
 \alias{coordDT}
-\title{Data with ICE curve information}
+\title{Data with location information asociated to ice curves values}
 \format{
 A data frame with 214 rows and 10 variables
 }

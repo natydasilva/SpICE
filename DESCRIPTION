@@ -2,8 +2,11 @@ Package: SpICE
 Title: ICE curve implementation fo spatial data
 Version: 0.0.0.9000
 Authors@R: 
-    person("Natalia", "da Silva", , "natalia.dasilva@fcea.edu.uy", role = c("aut", "cre"),
-           comment = c(ORCID = "0000-0002-6031-7451"))
+    c( person("Natalia", "da Silva", , "natalia.dasilva@fcea.edu.uy", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-6031-7451")),
+            person("Ignacio", "Alvarez", email = "ignacio.alvarez@fcea.edu.uy", role ="aut", 
+           comment = c(ORCID = "0000-0003-1633-2432"))
+           )
 Description: SpICE: An interpretable machine learning approache using ICE curves for spatial data.
 License: GPL (>= 3)
 Encoding: UTF-8
@@ -14,7 +17,10 @@ Imports:
     rlang, 
     ggplot2,
     dplyr,
-    ggmap
+    ggmap,
+    ClustGeo,
+    KernSmooth,
+    sf
 
 
 

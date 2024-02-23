@@ -1,4 +1,4 @@
-#' Data with ICE curve information 
+#' Data with location information asociated to ice curves values
 #' 
 #' data.frame with 1000 rows and five columns
 #' \itemize{
