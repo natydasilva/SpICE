@@ -43,6 +43,6 @@ Function to compute and visualize optimum alpha cluster values
 }
 \examples{
 \dontrun{
-plot_alpha( DD0 = curveDT, DD1= coordDT, yhat = yhat.id, icevalue = ice, grid = grid.val)
+plot_alpha( DD0 = curveDT, DD1 = coordDT, yhat = yhat.id, icevalue = ice, grid = grid.val)
 }
 }
