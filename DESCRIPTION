@@ -21,7 +21,8 @@ Imports:
     ggmap,
     ClustGeo,
     KernSmooth,
-    sf
+    sf,
+    stats
 
 
 

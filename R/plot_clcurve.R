@@ -19,7 +19,7 @@
 #' }
 #' @export
 plot_clcurve <- function(data = NULL, icevalue= NULL, gg,  yhat, gr = NULL, sz = 0.5, aa = 1/100, xlab = NULL, ylab = NULL,
-                          fct = TRUE, xvalue = NULL) { 
+                         fct = TRUE, xvalue = NULL) { 
   
   fc <- paste("~", rlang::as_name(rlang::quo( {{gg}} )) ) |> stats::as.formula()
   colores <- grDevices::palette.colors(palette = "Set1")[gr]

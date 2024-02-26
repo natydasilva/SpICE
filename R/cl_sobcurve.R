@@ -30,7 +30,7 @@ cl_sobcurve <- function( DD0, DD1, alp = 0.5, yhat = NULL, grid, icevalue ) {
     ll$y |> dplyr::as_tibble() |> t()
   })  |>  do.call(rbind, args=_)
   
- 
+  
   D1 <- DD1 |> 
     dplyr::arrange({{yhat}}) |> 
     sf::st_as_sf( coords = c("lat", "long"), crs = 4326) |> 
@@ -39,8 +39,8 @@ cl_sobcurve <- function( DD0, DD1, alp = 0.5, yhat = NULL, grid, icevalue ) {
   
   D0 <- sqrt( stats::dist(ice.smooth)^2 + stats::dist(ice.deriv)^2 )
   
-
+  
   ClustGeo::hclustgeo(D0 = D0, D1 = D1, alpha = alp) 
-
+  
 }
 
