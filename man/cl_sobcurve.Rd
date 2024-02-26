@@ -4,7 +4,7 @@
 \alias{cl_sobcurve}
 \title{Cluster ICE curves, transforming the ICE curves first and use for the clusters geographical information}
 \usage{
-cl_sobcurve(DD0, DD1, alp = 0.5, yhat)
+cl_sobcurve(DD0, DD1, alp = 0.5, yhat = NULL)
 }
 \arguments{
 \item{DD0}{data.frame with ICE curve information.}
@@ -23,6 +23,6 @@ Cluster ICE curves, transforming the ICE curves first and use for the clusters g
 }
 \examples{
 \dontrun{
-cl_sobcurve(DD0 = curveDT, DD1 = coordDT, yhat = yhat.id)
+cl_sobcurve(DD0 = curveDT, DD1 = coordDT, yhat = 'yhat.id')
 }
 }

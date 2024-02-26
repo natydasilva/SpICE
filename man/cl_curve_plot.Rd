@@ -6,9 +6,9 @@
 \usage{
 cl_curve_plot(
   data = NULL,
-  icevalue,
+  icevalue = NULL,
   gg,
-  yhat,
+  yhat = NULL,
   gr = NULL,
   sz = 0.5,
   aa = 1/100,
@@ -49,6 +49,6 @@ Plot clustered ICE curves using ggplot2
 }
 \examples{
 \dontrun{
-cl_curve_plot(data = curveDT, gg = grlab, gr = 1:4, xvalue = grid.val, aa =1/20)
+cl_curve_plot(data = curveDT, icevalue = 'ice', gg = grlab, yhat = yhat.id, gr = 1:4, xvalue = grid.val, aa =1/20)
 }
 }

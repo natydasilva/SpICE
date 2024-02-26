@@ -7,12 +7,12 @@
 #' @returns data.frame
 #' @examples
 #'\dontrun{
-#'cl_sobcurve(DD0 = curveDT, DD1 = coordDT, yhat = yhat.id)
+#'cl_sobcurve(DD0 = curveDT, DD1 = coordDT, yhat = 'yhat.id')
 #' }
 #' @export
 
-cl_sobcurve <- function( DD0, DD1, alp = 0.5, yhat ) { 
-  zz <- DD0 |>   split( f = DD0$yhat) 
+cl_sobcurve <- function( DD0, DD1, alp = 0.5, yhat = NULL ) { 
+  zz <- DD0 |>   split( f = DD0[, yhat])
   
   ice.smooth <- lapply(zz, FUN = function(crv) {
     ll <- KernSmooth::locpoly(x = crv$grid.val, y = crv$ice, gridsize = nrow(crv), bandwidth = diff(crv$grid.val)[1] )
