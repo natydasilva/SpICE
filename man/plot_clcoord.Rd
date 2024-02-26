@@ -46,7 +46,7 @@ Plot clustered ICE curves using ggplot2
 }
 \examples{
 \dontrun{
-#'montevideo <- c(left = -56.286532, bottom = -34.95, right = -56.004532, top =-34.801112 )
+montevideo <- c(left = -56.286532, bottom = -34.95, right = -56.004532, top =-34.801112 )
 plot_clcoord(data = coordDT, gg = grlab, gr = 1:4, region = montevideo)
 }
 }

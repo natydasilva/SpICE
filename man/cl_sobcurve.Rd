@@ -4,16 +4,20 @@
 \alias{cl_sobcurve}
 \title{Cluster ICE curves, transforming the ICE curves first and use for the clusters geographical information}
 \usage{
-cl_sobcurve(DD0, DD1, alp = 0.5, yhat = NULL)
+cl_sobcurve(DD0, DD1, alp = 0.5, yhat = NULL, grid, icevalue)
 }
 \arguments{
 \item{DD0}{data.frame with ICE curve information.}
 
-\item{DD1}{data.frame with coordinate information asociated to ice curves values.}
+\item{DD1}{data.frame with coordinate information asociated to ice curves values named lat and long.}
 
 \item{alp}{numeric value between 0 and 1 which represents the weight fo D0 (ICE curve information) respect to location value.}
 
-\item{yhat}{Name of each ice curve id}
+\item{yhat}{Name of each ice curve id.}
+
+\item{grid}{Name of the grid value variable.}
+
+\item{icevalue}{Name of ice curve variable.}
 }
 \value{
 data.frame
@@ -23,6 +27,6 @@ Cluster ICE curves, transforming the ICE curves first and use for the clusters g
 }
 \examples{
 \dontrun{
-cl_sobcurve(DD0 = curveDT, DD1 = coordDT, yhat = 'yhat.id')
+cl_sobcurve(DD0 = curveDT, DD1 = coordDT, yhat = yhat.id, grid = grid.val, ice = ice)
 }
 }

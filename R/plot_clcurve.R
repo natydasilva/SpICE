@@ -14,10 +14,11 @@
 #' @returns A ggplot2 object
 #' @examples
 #'\dontrun{
-#' cl_curve_plot(data = curveDT, icevalue = 'ice', gg = grlab, yhat = yhat.id, gr = 1:4, xvalue = grid.val, aa =1/20)
+#' plot_clcurve(data = curveDT, icevalue = ice, gg = grlab, yhat = yhat.id, 
+#'gr = 1:4, xvalue = grid.val, aa =1/20)
 #' }
 #' @export
-cl_curve_plot <- function(data = NULL, icevalue= NULL, gg, yhat = NULL, gr = NULL, sz = 0.5, aa = 1/100, xlab = NULL, ylab = NULL,
+plot_clcurve <- function(data = NULL, icevalue= NULL, gg,  yhat, gr = NULL, sz = 0.5, aa = 1/100, xlab = NULL, ylab = NULL,
                           fct = TRUE, xvalue = NULL) { 
   
   fc <- paste("~", rlang::as_name(rlang::quo( {{gg}} )) ) |> stats::as.formula()
@@ -25,7 +26,7 @@ cl_curve_plot <- function(data = NULL, icevalue= NULL, gg, yhat = NULL, gr = NUL
   
   pp <- data |>
     dplyr::filter( {{gg}} %in% gr ) |>
-    ggplot2::ggplot( ggplot2::aes(x = {{xvalue}}, y = icevalue, group = {{yhat}}, color = {{gg}} )) +
+    ggplot2::ggplot( ggplot2::aes(x = {{xvalue}}, y = {{icevalue}}, group = {{yhat}}, color = {{gg}} )) +
     ggplot2::geom_line(linewidth = sz, alpha = aa ) +
     ggplot2::labs(x = xlab, y = ylab) +
     ggplot2::scale_color_manual(values = colores) +

@@ -17,6 +17,7 @@ Imports:
     rlang, 
     ggplot2,
     dplyr,
+    tidyr,
     ggmap,
     ClustGeo,
     KernSmooth,
