@@ -1,5 +1,5 @@
 Package: SpICE
-Title: ICE curve implementation fo spatial data
+Title: An interpretable method based on ICE curves for spatial data
 Version: 0.0.0.9000
 Authors@R: 
     c( person("Natalia", "da Silva", , "natalia.dasilva@fcea.edu.uy", role = c("aut", "cre"),
