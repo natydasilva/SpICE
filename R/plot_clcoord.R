@@ -1,4 +1,4 @@
-#' Plot clustered ICE curves using ggplot2
+#' Plot map including geographical location of observations colored by groups using ggmap
 #' 
 #' @param data data.frame with the data to be ploted having the variables longitude and latitude, named long and lat
 #' @param gg name of the group id variable. 

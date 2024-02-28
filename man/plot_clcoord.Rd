@@ -2,7 +2,7 @@
 % Please edit documentation in R/plot_clcoord.R
 \name{plot_clcoord}
 \alias{plot_clcoord}
-\title{Plot clustered ICE curves using ggplot2}
+\title{Plot map including geographical location of observations colored by groups using ggmap}
 \usage{
 plot_clcoord(
   data = NULL,
@@ -42,7 +42,7 @@ plot_clcoord(
 A ggplot2 object.
 }
 \description{
-Plot clustered ICE curves using ggplot2
+Plot map including geographical location of observations colored by groups using ggmap
 }
 \examples{
 \dontrun{
