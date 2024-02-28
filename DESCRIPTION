@@ -7,7 +7,7 @@ Authors@R:
             person("Ignacio", "Alvarez", email = "ignacio.alvarez@fcea.edu.uy", role ="aut", 
            comment = c(ORCID = "0000-0003-1633-2432"))
            )
-Description: SpICE: An interpretable machine learning approache using ICE curves for spatial data.
+Description: SpICE: An interpretable machine learning approache using ICE curves for spatial data. Compute ICE curves clusters with geographical constrains and visualization.
 License: GPL (>= 3)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
