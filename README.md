@@ -3,7 +3,8 @@
 Natalia da Silva, Ignacio Alvarez-Castro 
 
 
-<img src="man/figures/SpICE_trans.png" align="right" alt="" width="60" />
+<img src="man/SpICE_trans.png" align="right" alt="" width="100" />
+
 \vspace{1cm}
 
 
